@@ -12,7 +12,7 @@ import cors from "cors";
 
 
 
-const CONNECTION_STRING = "mongodb+srv://Just0717:Just0717@cluster0.nfmtkwb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" || 'mongodb://127.0.0.1:27017/kanbas'
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
 mongoose.connect(CONNECTION_STRING);
 
 
